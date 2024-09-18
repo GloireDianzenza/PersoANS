@@ -1,0 +1,14 @@
+{
+    "my-code-actions.actions": {
+    
+        "[python,typescript]": {
+        "create method {{diag:$1}}": {
+            "diagnostics": ["\"(.*?)\" is not defined", "Undefined variable '(.*?)'"],
+            "atCursor": "\\b{{diag:$1}}\\(([^)]*)\\)",
+            "insertFind": "{{diag:$1}}\\((.*?)\\)",
+            "text": "\ndef {{diag:$1}}({{atCursor:$1}}):\n    pass\n\n",
+            "where": "afterLast",           
+        }
+        }
+    }
+}

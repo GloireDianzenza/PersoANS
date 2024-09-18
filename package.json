@@ -1,0 +1,15 @@
+{
+  "name": "customlanguage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "deno run --allow-read=. main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "deno": "^0.1.1"
+  }
+}
